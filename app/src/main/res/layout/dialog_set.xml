@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/comtainerborderback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:shadowColor="@color/colorBlackDeep"
+            android:text="报警电话设置"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.huazhi.changsha.compositeexperiment.view.CustomEditText
+            android:id="@+id/et_phone"
+            style="@style/CustomEditViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="输入接收报警信息的手机号码"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_setNumber"
+            style="@style/CustomButtonGreenStyle"
+            android:layout_marginTop="40dp"
+            android:text="确定"
+            android:textAllCaps="false" />
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="portArray">
+        <item>6004</item>
+        <item>6005</item>
+        <item>6006</item>
+        <item>6007</item>
+        <item>6008</item>
+    </string-array>
+</resources>

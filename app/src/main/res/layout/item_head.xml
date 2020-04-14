@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_app_item_head"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorBlueShallow" >
+
+    <Button
+        android:id="@+id/btn_head_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/head_back_selector"
+        android:paddingLeft="10dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16"/>
+
+    <TextView
+        android:id="@+id/tv_head_back_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxEms="15"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_head_cmd"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16" />
+
+</RelativeLayout>

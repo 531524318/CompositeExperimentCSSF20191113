@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huazhi.changsha.compositeexperiment.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="198px" />
+
+    <!--分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="196px"
+        android:background="#c8c8c8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="196px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/parent_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/parent_home_img"
+                android:layout_width="69px"
+                android:layout_height="69px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/home_normal"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/parent_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21px"
+                android:text="主页"
+                android:textColor="@color/gray_02"
+                android:textSize="45px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/parent_mine_img"
+                android:layout_width="69px"
+                android:layout_height="69px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/set_normal"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/parent_mine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21px"
+                android:text="设置"
+                android:textColor="@color/gray_02"
+                android:textSize="45px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

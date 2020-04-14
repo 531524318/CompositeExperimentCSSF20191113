@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">综合实验系统</string>
+    <string name="save">保存</string>
+    <string name="success">保存成功</string>
+    <string name="try_again">获取传感器设备信息中...,稍后请重试!</string>
+    <string name="submit">确定</string>
+    <string name="login">登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="username_and_pwd_error">用户名或密码错误</string>
+    <string name="message">安装包已下载，是否现在安装?</string>
+    <string name="confirm">确定</string>
+    <string name="prompt">提示</string>
+    <string name="dismiss">隐藏</string>
+    <string name="cancel">取消</string>
+
+    <!--八个实验-->
+    <string name="composite_experiment_environmental_monitor">家庭环境监测系统</string>
+    <string name="composite_experiment_lighting_system">家庭延时照明系统</string>
+    <string name="composite_experiment_switch_control">家庭电器设备控制</string>
+    <string name="composite_experiment_infrared_remote_control">家庭红外遥控电器控制</string>
+    <string name="composite_experiment_fence">家庭安防报警系统</string>
+    <string name="composite_experiment_flame">家庭火灾报警系统</string>
+    <string name="composite_experiment_gas">家庭可燃气体泄漏报警系统</string>
+    <string name="composite_experiment_gate_lock">家庭门锁控制系统</string>
+    <string name="composite_experiment_camera">家庭可视门禁系统</string>
+    <string name="composite_experiment_fan">家庭风扇控制系统</string>
+    <string name="composite_experiment_pulsectrllighting">脉冲信号控制可调灯</string>
+
+    <!--家庭照明系统-->
+    <string name="home_hand_ctrl">手动控制</string>
+    <string name="home_cmd_title">配置</string>
+
+    <string name="home_hi_status_title">人体红外传感器状态</string>
+    <string name="home_hi_status_have_person">有人</string>
+    <string name="home_hi_status_no_person">无人</string>
+
+    <string name="home_ie_title">光照度传感器光照度</string>
+    <string name="home_ie_max_title">光照度最大值(LUX)</string>
+    <string name="home_ie_hint">请输入光照度最大值</string>
+    <string name="home_ie_input">光照度最大值不能为空</string>
+    <string name="home_ie_value_input">光照度最大值必须大于100且为100的整数倍</string>
+    <string name="home_ie_max_value">1000</string>
+
+    <string name="home_time_max_title">人体红外信号延时(S)</string>
+    <string name="home_ie_time">请输入人体红外信号延时时间值</string>
+    <string name="home_ie_time_input">人体红外信号延时时间值不能为空</string>
+    <string name="home_ie_value_time_input">人体红外信号延时时间值必须大于0并为整数</string>
+
+    <string name="home_al_title">可调节灯传感器亮度</string>
+
+    <string name="device_no_title">可调节灯设备编号</string>
+    <string name="device_no_hint">请输入可调节灯设备编号</string>
+    <string name="device_no_msg">可调节灯设备编号为1至12的数字,不足两位,请在前面加0</string>
+    <string name="device_no_op_msg">请进入配置界面,输入有效的可调节灯设备编号</string>
+
+    <!--家庭电器设备控制-->
+    <string name="home_relay_title">继电器</string>
+    <string name="home_fan_title">风扇</string>
+    <string name="home_electric_bolt_lock_title">电插锁</string>
+    <string name="home_alarm_title">报警器</string>
+
+    <!-- 家庭红外遥控电器控制-->
+    <string name="set_pwd">设置密码</string>
+    <string name="set_pwd_msg">你还没有设置密码,请先设置密码</string>
+    <string name="update_pwd">修改密码</string>
+    <string name="update_pwd_success">修改密码成功</string>
+    <string name="update_pwd_fail">修改密码失败</string>
+    <string name="pwd_title">新密码</string>
+    <string name="pwd_1_title">密码</string>
+    <string name="pwd_hint">请输入新密码</string>
+    <string name="pwd_re_title">再次输入新密码</string>
+    <string name="pwd_re_hint">请再次输入新密码</string>
+    <string name="pwd_msg">密码不为空且长度为6位字符</string>
+    <string name="pwd_new_msg">新密码不为空且长度为6位字符</string>
+    <string name="pwd_re_msg">再次输入新密码不为空且长度为6位字符</string>
+    <string name="pwd_equals_msg">两次输入密码不一致</string>
+    <string name="pwd_wrong">密码错误</string>
+
+    <string name="username_title">用户名</string>
+    <string name="username_hint">请输入用户名</string>
+    <string name="username_msg">用户名不为空且最大长度为15位字符</string>
+
+    <string name="register">注册</string>
+    <string name="register_pwd_title">密码</string>
+    <string name="register_pwd_hint_title">请输入密码</string>
+    <string name="register_pwd_re_title">再次输入密码</string>
+    <string name="register_pwd_re_hint">请再次输入密码</string>
+    <string name="register_pwd_success">注册成功</string>
+    <string name="register_pwd_fail">注册失败</string>
+    <string name="home_pwd_hint">请输入密码</string>
+    <!-- 家庭温度控制系统-->
+    <string name="home_fan_temp_title">风扇启动温度阀值（℃）</string>
+    <string name="home_temp_input">风扇启动温度阀值不能为空</string>
+    <string name="home_temp_value_input">风扇启动温度阀值必须大于16</string>
+</resources>

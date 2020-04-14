@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huazhi.changsha.compositeexperiment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 家庭环境监测系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.environment.EnvironmentMonitorMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 家庭照明系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.lighting.LightingMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 配置-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.lighting.LightingCfgActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 家庭电器设备控制-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.switchctrl.SwitchCtrlMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 家庭红外遥控电器控制-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.infrared.InfraredRemoteMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 家庭安防报警系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.fence.FenceMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 家庭火灾报警系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.flame.FlameMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 家庭可燃气体泄漏报警系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.gas.GasMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 家庭门锁控制系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.gatelock.GateLockMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 注册-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.gatelock.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 更新密码-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.gatelock.UpdatePwdActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 摄像头-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.camera.CameraActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 家庭风扇控制系统-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.fan.FanMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 配置-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.fan.FanCfgActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- 配置-->
+        <activity
+            android:name="com.huazhi.changsha.compositeexperiment.activity.pulsectrllighting.PulseCtrlLightingMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+</manifest>

@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.huazhi.changsha.compositeexperiment"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.4"
+        flavorDimensions "1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 打包自定义包名(gradle3.0+)
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "composite_" + buildType.name + "_v" +
+                    defaultConfig.versionName + "_" + new Date().format("yyyyMMdd_HHmmss") +
+                    ".apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:${rootProject.supportVersion}"
+    implementation "com.android.support:support-v4:${rootProject.supportVersion}"
+    implementation 'com.android.support:recyclerview-v7:26.0.2'
+    //导入view注入框架
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+
+    //导入rxeasyhttp网络库
+    api 'com.zhouyou:rxeasyhttp:2.1.2'
+    api 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    api files('libs/fastjson-1.2.5.jar')
+
+    //方法数超标，需要导入下包来处理
+    implementation 'com.android.support:multidex:1.+'
+    //开启权限
+    api 'com.yanzhenjie:permission:1.1.2'
+    //eventbus
+    api 'org.greenrobot:eventbus:3.0.0'
+}

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_head" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="服务器IP："
+                        android:textSize="@dimen/textsize_17" />
+
+                    <com.huazhi.changsha.compositeexperiment.view.CustomEditText
+                        android:id="@+id/et_serverIP"
+                        style="@style/CustomEditViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_edittext"
+                        android:hint="输入服务器IP"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="" />
+                    />
+                </LinearLayout>
+
+
+                <com.huazhi.changsha.compositeexperiment.view.CustomEditText
+                    android:id="@+id/et_serverPort"
+                    style="@style/CustomEditViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="输入端口号"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:visibility="gone" />
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="端口号："
+                        android:textSize="@dimen/textsize_17" />
+
+                    <Spinner
+                        android:id="@+id/spinner_serverPort"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_style"
+                        android:entries="@array/portArray"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_link"
+                    style="@style/CustomButtonGreenStyle"
+                    android:layout_marginTop="40dp"
+                    android:text="设置"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务器连接状态："
+                    android:textSize="@dimen/textsize_17" />
+
+                <ImageView
+                    android:id="@+id/complete_right"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/wifi_false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="无线网络状态："
+                    android:textSize="@dimen/textsize_17" />
+
+                <TextView
+                    android:id="@+id/wifi_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI名称: ...\n手机IP: ..."
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/warn_set_button"
+                    style="@style/CustomButtonGreenStyle"
+                    android:layout_marginTop="20dp"
+                    android:text="报警设置"
+                    android:textAllCaps="false" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/textsize_18"
+                android:textColor="@color/deep_gray"/>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

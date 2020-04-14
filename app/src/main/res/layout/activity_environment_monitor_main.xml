@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_head" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="室内温度："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/temp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="室内湿度："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/humiture_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="室内光照度："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/ill_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="人体红外传感器："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/human_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="红外对射栅栏："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/fence_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="可燃气体检测："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/comb_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:text="火焰检测："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/flame_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="无"
+                android:textColor="@color/cold_gray"
+                android:textSize="@dimen/textsize_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5px"
+            android:background="#E8E8E6" />
+    </LinearLayout>
+
+</LinearLayout>
